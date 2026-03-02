@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
+// Newsletter signup UI: email input and submit. status/message/onValidated come from MailchimpForm (react-mailchimp-subscribe). EMAIL key is required by Mailchimp API.
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState("");
 

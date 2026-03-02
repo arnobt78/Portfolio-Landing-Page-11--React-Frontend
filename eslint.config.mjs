@@ -57,7 +57,8 @@ export default [
   {
     files: ["server.js"],
     languageOptions: {
-      sourceType: "commonjs",
+      ecmaVersion: "latest",
+      sourceType: "module",
       globals: {
         ...globals.node,
       },

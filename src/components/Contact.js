@@ -4,6 +4,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+// Contact section: form posts to backend POST /contact; success/error message shown below. Requires server running and .env email config.
 export const Contact = () => {
   const formInitialDetails = {
     firstName: '',
@@ -14,7 +15,7 @@ export const Contact = () => {
   }
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
+  const [status, setStatus] = useState({}); // { success: boolean, message: string } after submit.
 
   const onFormUpdate = (category, value) => {
       setFormDetails({
@@ -26,6 +27,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
+    // In production, replace with your deployed API URL (e.g. process.env.VITE_API_URL + '/contact').
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -36,10 +38,11 @@ export const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
+    if (result.code === 200) {
+      // Backend returns { code: 200, status: "Message Sent" } on success.
+      setStatus({ success: true, message: 'Message sent successfully'});
     } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+      setStatus({ success: false, message: 'Something went wrong, please try again later.'});
     }
   };
 
@@ -65,7 +68,7 @@ export const Contact = () => {
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                      <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
                     </Col>
                     <Col size={12} sm={6} className="px-1">
                       <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />

@@ -5,6 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 
+// Skills section: responsive carousel of skill items (e.g. Web Development, Brand Identity). Breakpoints control how many items show per row.
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -38,6 +39,7 @@ export const Skills = () => {
                 industry.<br></br> Lorem Ipsum has been the industry&apos;s
                 standard dummy text.
               </p>
+              {/* react-multi-carousel: infinite loop; responsive controls items per viewport. */}
               <Carousel
                 responsive={responsive}
                 infinite={true}

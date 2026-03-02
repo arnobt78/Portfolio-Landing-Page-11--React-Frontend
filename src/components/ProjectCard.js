@@ -1,5 +1,6 @@
 import { Col } from "react-bootstrap";
 
+// Single project card: image with overlay showing title and description. Used in a grid in Projects.js.
 export const ProjectCard = ({ title, description, imgUrl }) => {
   return (
     <Col size={12} sm={6} md={4}>

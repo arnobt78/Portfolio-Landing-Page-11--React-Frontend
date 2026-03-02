@@ -2,6 +2,7 @@
   "name": "portfolio-ui-11",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.8",

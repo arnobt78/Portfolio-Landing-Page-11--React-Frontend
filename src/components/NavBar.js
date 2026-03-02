@@ -9,10 +9,11 @@ import {
   BrowserRouter as Router
 } from "react-router-dom";
 
+// Top navigation: logo, in-page links (#home, #skills, #projects), social icons, and "Let's Connect" (scrolls to #connect).
 export const NavBar = () => {
 
-  const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState('home'); // Tracks which nav link is active for styling.
+  const [scrolled, setScrolled] = useState(false);   // True after user scrolls 50px; toggles .scrolled class.
 
   useEffect(() => {
     const onScroll = () => {
@@ -54,6 +55,7 @@ export const NavBar = () => {
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="#"><img src={navIcon3} alt="" /></a>
               </div>
+              {/* HashLink scrolls to #connect (contact section) without full page reload. */}
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>

@@ -5,6 +5,7 @@ import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
+// Footer: newsletter signup (MailchimpForm), logo, social links, and copyright. Replace # with real social URLs.
 export const Footer = () => {
   return (
     <footer className="footer">

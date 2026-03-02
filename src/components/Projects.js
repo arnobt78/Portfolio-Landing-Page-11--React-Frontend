@@ -7,6 +7,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
+// Projects section: tabbed layout; first tab shows a grid of ProjectCards. Replace the projects array with your own data.
 export const Projects = () => {
   const projects = [
     {
@@ -61,6 +62,7 @@ export const Projects = () => {
                     when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book.
                   </p>
+                  {/* Tab.Container: first tab = project grid; second/third tabs = placeholder content. */}
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -90,6 +92,7 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
+                      {/* Note: second tab uses eventKey="section" (Nav has "second"); you can align these for extra tabs. */}
                       <Tab.Pane eventKey="section">
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
@@ -116,7 +119,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="" />
     </section>
   );
 };

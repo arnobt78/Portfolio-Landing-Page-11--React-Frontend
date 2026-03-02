@@ -7,6 +7,7 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
+// Root component: composes the single-page portfolio sections in order (navbar → banner → skills → projects → contact → footer).
 function App() {
   return (
     <div className="App">

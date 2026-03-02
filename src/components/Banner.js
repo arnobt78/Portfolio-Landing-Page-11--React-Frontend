@@ -5,14 +5,16 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
+// Text options for the typing effect; ROTATE_PERIOD = pause (ms) when text is fully shown before deleting.
 const ROTATE_TEXTS = ["Web Developer", "Web Designer", "UI/UX Designer"];
 const ROTATE_PERIOD = 2000;
 
+// Hero section: headline, typing/rotating title, short intro, and CTA. Uses TrackVisibility for scroll-in animations.
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(250);
+  const [loopNum, setLoopNum] = useState(0);     // Index of current phrase in ROTATE_TEXTS.
+  const [isDeleting, setIsDeleting] = useState(false); // True when backspacing.
+  const [text, setText] = useState("");           // Currently visible substring.
+  const [delta, setDelta] = useState(250);         // Interval (ms) between character add/remove; speeds up when deleting.
 
   useEffect(() => {
     const tick = () => {
@@ -50,8 +52,9 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
+            {/* TrackVisibility: adds animate.css classes when section enters viewport for fade-in effect. */}
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
