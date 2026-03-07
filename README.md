@@ -5,11 +5,11 @@
 [![Vite](https://img.shields.io/badge/Vite-7.3.1-646CFF)](https://vitejs.dev/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.8-7952B3)](https://getbootstrap.com/)
 
-This repository is a single-page portfolio template built with React and Vite. It includes a hero banner, skills carousel, project showcase with tabs, contact form (backed by an Express + Nodemailer API), and a newsletter signup (Mailchimp). Use it as a learning reference, a starter for your own portfolio, or as a teaching example for React, Vite, and a simple Node.js backend.
+A single-page portfolio template built with React and Vite. It includes a hero banner, skills carousel, project showcase with tabs, contact form (backed by an Express + Nodemailer API), and a newsletter signup (Mailchimp). Use it as a learning reference, a starter for your own portfolio, or as a teaching example for React, Vite, and a simple Node.js backend.
 
 - **Live Demo:** [https://portfolio-ui-11.vercel.app/](https://portfolio-ui-11.vercel.app/)
 
----
+<img width="1872" height="954" alt="Screenshot 2026-03-07 at 12 10 16" src="https://github.com/user-attachments/assets/a51971fe-b5e6-4ef5-a2a8-7c14498f1bf2" /> <img width="1849" height="877" alt="Screenshot 2026-03-07 at 12 10 30" src="https://github.com/user-attachments/assets/e25ed166-d071-4a43-8ee6-dd54eb673abb" /> <img width="1876" height="899" alt="Screenshot 2026-03-07 at 12 10 56" src="https://github.com/user-attachments/assets/02818826-313e-4aad-a4ec-1f989df1e7cf" /> <img width="1886" height="940" alt="Screenshot 2026-03-07 at 12 11 11" src="https://github.com/user-attachments/assets/1d4b5633-bac2-4a4f-b2dd-a0eec0084825" />
 
 ## Table of Contents
 
