@@ -1,4 +1,4 @@
-# Portfolio Landing Page 11 - React, Vite, Bootstrap Frontend Project
+# Portfolio Landing Page 11 - React, Vite, JavaScript, Bootstrap Frontend Project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-19.2.4-blue)](https://react.dev/)
@@ -9,7 +9,10 @@ A single-page portfolio template built with React and Vite. It includes a hero b
 
 - **Live Demo:** [https://portfolio-ui-11.vercel.app/](https://portfolio-ui-11.vercel.app/)
 
-<img width="1872" height="954" alt="Screenshot 2026-03-07 at 12 10 16" src="https://github.com/user-attachments/assets/a51971fe-b5e6-4ef5-a2a8-7c14498f1bf2" /> <img width="1849" height="877" alt="Screenshot 2026-03-07 at 12 10 30" src="https://github.com/user-attachments/assets/e25ed166-d071-4a43-8ee6-dd54eb673abb" /> <img width="1876" height="899" alt="Screenshot 2026-03-07 at 12 10 56" src="https://github.com/user-attachments/assets/02818826-313e-4aad-a4ec-1f989df1e7cf" /> <img width="1886" height="940" alt="Screenshot 2026-03-07 at 12 11 11" src="https://github.com/user-attachments/assets/1d4b5633-bac2-4a4f-b2dd-a0eec0084825" />
+![Screenshot 2026-03-07 at 12 10 16](https://github.com/user-attachments/assets/a51971fe-b5e6-4ef5-a2a8-7c14498f1bf2)
+![Screenshot 2026-03-07 at 12 10 30](https://github.com/user-attachments/assets/e25ed166-d071-4a43-8ee6-dd54eb673abb)
+![Screenshot 2026-03-07 at 12 10 56](https://github.com/user-attachments/assets/02818826-313e-4aad-a4ec-1f989df1e7cf)
+![Screenshot 2026-03-07 at 12 11 11](https://github.com/user-attachments/assets/1d4b5633-bac2-4a4f-b2dd-a0eec0084825)
 
 ## Table of Contents
 
